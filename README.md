@@ -2,14 +2,17 @@
 Convert YAML file to text/html table for documentation 
 
 # Introduction 
-  Time to time I needed to document YAML files for end-users.
+  Time to time I needed to document YAML files for end-users. And best way so far we have seen is to build
+  table and put each field in table row and document it. 
   I need a quick script that will take YAML file and generated (html) table;
    only thing I needed to do was to input some help text that explains field
    
-   With this python script it will do just that - give input file and format (text or html) it will   
-   it iterates over each yaml section and builds table out of it 
+   Above need gave way to this python script; it will do just that - given input file and format (text or html) it will   
+   it iterates over each yaml section and builds table(s) out of it 
    
-   This mainly uses two python library 'pyaml' and 'prettyTable' 
+   As of now it creates multiple tables based on top level YAML sections  
+   
+   This mainly uses two python libraries '*pyaml*' and '*prettyTable*' 
    
    [PYAML](https://pyyaml.org/wiki/PyYAML): For reading the yaml file    
    [PrettyTable](https://pypi.org/project/PrettyTable/): For printing text tables or HTML table    
@@ -72,57 +75,57 @@ python yaml_to_table.py --inputFile samples/k8sDeploy.yaml --out text
 You will see output like this 
 
 ```bash
-apiVersion:
-+------------+---------------+----------+------------------------------------------------------------------------------+
-| Field      | Example Value | Required | Description                                                                  |
-+------------+---------------+----------+------------------------------------------------------------------------------+
-| apiVersion | apps/v1       |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'orci' b'et' b'a'. |
-+------------+---------------+----------+------------------------------------------------------------------------------+
+=> apiVersion:
++------------+---------------+----------+--------------+
+| Field      | Example Value | Required | Description  |
++------------+---------------+----------+--------------+
+| apiVersion | apps/v1       |          | Lorem ipsum. |
++------------+---------------+----------+--------------+
 Raw yaml:
 	apiVersion: apps/v1
 
-kind:
-+-------+---------------+----------+-------------------------------------------------------------------------------------------+
-| Field | Example Value | Required | Description                                                                               |
-+-------+---------------+----------+-------------------------------------------------------------------------------------------+
-| kind  | Deployment    |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'nisi' b'mi' b'a' b'nunc' b'a'. |
-+-------+---------------+----------+-------------------------------------------------------------------------------------------+
+=> kind:
++-------+---------------+----------+------------------------+
+| Field | Example Value | Required | Description            |
++-------+---------------+----------+------------------------+
+| kind  | Deployment    |          | Lorem ipsum dolor sit. |
++-------+---------------+----------+------------------------+
 Raw yaml:
 	kind: Deployment
 
-metadata:
-+--------+------------------+----------+------------------------------------------------------------------------------------+
-| Field  | Example Value    | Required | Description                                                                        |
-+--------+------------------+----------+------------------------------------------------------------------------------------+
-| name   | nginx-deployment |    --    | Lorem ipsum dolor sit.                                                             |
-| labels | --               |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'quis' b'mi' b'a' b'ut'. |
-|   app  | nginx            |    --    | Lorem ipsum dolor.                                                                 |
-+--------+------------------+----------+------------------------------------------------------------------------------------+
+=> metadata:
++--------+------------------+----------+--------------------------------------------------------------------------------------+
+| Field  | Example Value    | Required | Description                                                                          |
++--------+------------------+----------+--------------------------------------------------------------------------------------+
+| name   | nginx-deployment |          | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'nunc' b'id' b'eu'.        |
+| labels |                  |          | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'duis' b'eu' b'id' b'sit'. |
+|   app  | nginx            |          | Lorem ipsum dolor sit amet, consecteteur adipiscing.                                 |
++--------+------------------+----------+--------------------------------------------------------------------------------------+
 Raw yaml:
 	metadata:
 	  name: nginx-deployment
 	  labels:
 	    app: nginx
 
-spec:
-+---------------------------+---------------+----------+--------------------------------------------------------------------------------------------------------------------+
-| Field                     | Example Value | Required | Description                                                                                                        |
-+---------------------------+---------------+----------+--------------------------------------------------------------------------------------------------------------------+
-| replicas                  | 3             |    --    | Lorem ipsum dolor sit amet, consecteteur.                                                                          |
-| selector                  | --            |    --    | Lorem ipsum dolor sit.                                                                                             |
-|   matchLabels             | --            |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'enim' b'eu' b'a' b'a' b'a' b'tortor' b'lacus' b'vitae'. |
-|     app                   | nginx         |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'nisi'.                                                  |
-| template                  | --            |    --    | Lorem ipsum.                                                                                                       |
-|   metadata                | --            |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'nisi' b'in'.                                            |
-|     labels                | --            |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing.                                                               |
-|       app                 | nginx         |    --    | Lorem ipsum dolor.                                                                                                 |
-|   spec                    | --            |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing.                                                               |
-|     containers            |               |          | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'elit' b'ad' b'a'.                                       |
-|         name              | nginx         |    --    | Lorem ipsum dolor sit amet.                                                                                        |
-|         image             | nginx:1.7.9   |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'orci' b'ad' b'a'.                                       |
-|         ports             |               |          | Lorem ipsum dolor sit amet, consecteteur adipiscing elit.                                                          |
-|             containerPort | 80            |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'nunc' b'eu' b'a' b'ante' b'a' b'tortor'.                |
-+---------------------------+---------------+----------+--------------------------------------------------------------------------------------------------------------------+
+=> spec:
++---------------------------+---------------+----------+---------------------------------------------------------------------------------------------------+
+| Field                     | Example Value | Required | Description                                                                                       |
++---------------------------+---------------+----------+---------------------------------------------------------------------------------------------------+
+| replicas                  | 3             |          | Lorem ipsum.                                                                                      |
+| selector                  |               |          | Lorem ipsum.                                                                                      |
+|   matchLabels             |               |          | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'arcu' b'id' b'ad' b'neque' b'a' b'eu'. |
+|     app                   | nginx         |          | Lorem ipsum.                                                                                      |
+| template                  |               |          | Lorem ipsum dolor sit amet, consecteteur.                                                         |
+|   metadata                |               |          | Lorem ipsum dolor sit amet.                                                                       |
+|     labels                |               |          | Lorem ipsum dolor sit amet, consecteteur adipiscing.                                              |
+|       app                 | nginx         |          | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'diam' b'et'.                           |
+|   spec                    |               |          | Lorem ipsum dolor sit.                                                                            |
+|     containers            |               |          | Lorem ipsum dolor sit amet, consecteteur adipiscing elit b'quis'.                                 |
+|         name              | nginx         |          | Lorem ipsum.                                                                                      |
+|         image             | nginx:1.7.9   |          | Lorem ipsum dolor sit.                                                                            |
+|         ports             |               |          | Lorem ipsum dolor sit amet, consecteteur.                                                         |
+|             containerPort | 80            |          | Lorem ipsum dolor sit amet, consecteteur adipiscing elit.                                         |
++---------------------------+---------------+----------+---------------------------------------------------------------------------------------------------+
 Raw yaml:
 	spec:
 	  replicas: 3
@@ -142,7 +145,7 @@ Raw yaml:
 
 ```
 
-If I need html as input then I can run it like this 
+If I need html as output then I can run it like this 
 
 ```bash
 > python yaml_to_table.py --inputFile samples/k8sDeploy.yaml --out html
@@ -152,3 +155,5 @@ File samples/k8sDeploy.doc.html has been generated
 Tool will generate output HTML file that will look like this :
 
 ![yaml to html](doc/k8s-html-out.png)
+
+

@@ -125,12 +125,12 @@ def printDic(inDictionary, inPTable, indent):
             elif isinstance(inDictionary, list):
                 # If it simple array/list we just print all it's value and we are done
                 for _item in inDictionary:
-                    inPTable.add_row([indent + _item, "--", "--", listToString(get_sentences(1, True))])
+                    inPTable.add_row([indent + _item, SPACE_CHAR+SPACE_CHAR, SPACE_CHAR+SPACE_CHAR, listToString(get_sentences(1, True))])
                 break
 
             # if it is dictionary or list process them accordingly
             if isinstance(moreStuff, dict):
-                inPTable.add_row([indent + item, "--", "--", listToString(get_sentences(1, True))])
+                inPTable.add_row([indent + item, SPACE_CHAR+SPACE_CHAR, SPACE_CHAR+SPACE_CHAR, listToString(get_sentences(1, True))])
                 printDic(moreStuff, inPTable, SPACE_CHAR + SPACE_CHAR + indent)
             elif isinstance(moreStuff, list):
 
@@ -146,7 +146,7 @@ def printDic(inDictionary, inPTable, indent):
             else:
                 # Most of the call will end-up eventually here -
                 # this will print - key,value,isItRequired, Lorem ipsum (description)
-                inPTable.add_row([indent + item, inDictionary[item], "--", listToString(get_sentences(1, True))])
+                inPTable.add_row([indent + item, inDictionary[item], SPACE_CHAR+SPACE_CHAR, listToString(get_sentences(1, True))])
 
 
 """
@@ -190,14 +190,14 @@ with open(INPUT_YAML) as file:
                 yaml_snippet = yaml.dump(dic)
 
         else:
-            prettyTable.add_row([key, dic, "--", get_sentences(1, True)[0]])
+            prettyTable.add_row([key, dic, SPACE_CHAR+SPACE_CHAR, get_sentences(1, True)[0]])
             yaml_snippet = yaml.dump({key: dic})
 
         if isinstance(yaml_file_object, dict):
             if PRINT_HTML:
                 body_st.append("<h2>" + key + "</h2>")
             else:
-                print(key + ":")
+                print("=> "+key + ":")
 
         table = prettyTable.get_html_string(attributes={"name": key,
                                                         "id": key,
