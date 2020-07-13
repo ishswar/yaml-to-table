@@ -7,7 +7,7 @@ Convert YAML file to text/html table for documentation
   I need a quick script that will take YAML file and generated (html) table;
    only thing I needed to do was to input some help text that explains field
    
-   Above need gave way to this python script; it will do just that - given input file and format (text or html) it will   
+   Above need gave way to this python script; it will do just that - given input (yaml) file it will   
    it iterates over each yaml section and builds table(s) out of it 
    
    As of now it creates multiple tables based on top level YAML sections  
