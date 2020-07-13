@@ -1,0 +1,134 @@
+configVersion: 1.0.0
+name: appName
+zipName: appName.deploy.zip
+appTemplate: app.template.name.x.y.z
+appTemplateVersion: 1.0.0.v2019-07-09-2127
+description: Add description here
+environment: Prod
+node: Prod
+properties:
+- name: 'HttpOutboundConnectionConfig'
+  type: HTTPClient
+  value: HttpClient_weldingSOAP
+- name: 'HttpInboundConnectionConfig'
+  type: String
+  value: httpConnector
+services:
+- name: weldingproxy
+  soapBindings:
+  - name: SOAPService_Binding1
+    operation: null
+    description: null
+    encoding: LITERAL
+    endpointURI: null
+    httpInboundConnectionJNDIName: null
+    httpTransportConfig:
+      bindingTimeout: null
+      endpointURI: /weldingproxy/
+      httpConnectorJNDIName: httpConnector
+      sessionTimeout: '60'
+      soapHttpPropertyNames:
+      - HttpInboundConnectionConfig
+    operationConfigs:
+    - action: getweldingByCity
+      actionNeeded: true
+      attachmentStyle: null
+      encoding: LITERAL
+      messageConfigurationDescs:
+      - name: getwelderByCityRequest
+        description: null
+        action: null
+        messageDirection: INPUT
+        namespace: null
+        soapMessagePartDesc:
+        - name: parameters
+          description: null
+          encoding: null
+          namespace: null
+          partType: Body
+      operationName: getwelderByCity
+      senderIdentifierExpression: ''
+      style: DOCUMENT
+      timeout: 0
+    propterties: null
+    senderIdentifierExpression: ''
+    serviceId: null
+    serviceName: null
+    soapVersion: '1.1'
+    style: DOCUMENT
+    targetNamespace: http://www.example.org/weldingproxy/weldingproxy
+    transportBindingType: HTTP
+    validateRequest: 'false'
+    validateResponse: 'false'
+references:
+- name: welding
+  soapBindings:
+  - name: SOAPReference_Binding1
+    operation: null
+    description: null
+    encoding: LITERAL
+    httpOutboundConnectionJNDIName: HttpClient_weldingSOAP
+    httpTransportConfig:
+      bindingTimeout: null
+      endpointURI: /welding/
+      httpConnectorJNDIName: null
+      httpOutboundConnectionJNDIName: HttpClient_weldingSOAP
+      overrideHttpClientTimout: false
+      sessionTimeout: null
+      soapHttpPropertyNames: null
+resources:
+  httpClients:
+  - name: HttpClient_weldingSOAP
+    operation: null
+    description: null
+    acceptRedirect: 'false'
+    basicAuthConfigured: false
+    basicAuthPassword: null
+    basicAuthUsername: null
+    connectionRetrivalTimeout: '0'
+    connectionTimeout: '0'
+    emptyPwd: false
+    enableConnectionPooling: 'true'
+    host: 0.0.0.0
+    localSocketAddress: null
+    maxPoolSize: '20'
+    maximumTotalConnections: '20'
+    maximumTotalConnectionsPerHost: '2'
+    port: '7777'
+    proxyConfigured: false
+    proxyHost: null
+    proxyPort: null
+    proxyType: null
+    soBufferSize: '-1'
+    soLinger: '0'
+    soReceiveBufferSize: '-1'
+    soReuseAddress: 'false'
+    soSendBufferSize: '-1'
+    soTimeout: '0'
+    sslEnabled: false
+    sslJndiName: null
+    staleCheck: 'false'
+    tcpNoDelay: 'true'
+  jdbcDataSources:
+  - name: name3
+    operation: null
+    description: null
+    connectionProps: null
+    dataSourceClass: null
+    disableValidateConnectionOnInit: false
+    driverId: null
+    hostTypeProps: null
+    identityJndiName: null
+    jdbcDriver: oracle.jdbc.driver.OracleDriver
+    loginCredUserPwd: false
+    loginTimeOut: '60000'
+    maxConnections: '10'
+    maxPoolSize: '20'
+    password: null
+    sslEnabled: false
+    sslJndiName: null
+    transactional: false
+    typeMapping: null
+    url: jdbc:oracle:thin:@localhost:1521:dbname
+    username: null
+    xaConnection: false

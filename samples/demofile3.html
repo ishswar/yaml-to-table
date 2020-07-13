@@ -1,0 +1,232 @@
+
+        <html>
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          <style>
+        body
+        {
+            padding-left: 20px;
+        }
+        th:nth-child(1) {
+          width: 200px;
+          }
+        
+        /* the second */
+        th:nth-child(2) {
+          width: 200px;
+        }
+        
+        /* the third */
+        th:nth-child(3) {
+          width: 100px;
+         }
+         /* the third */
+         th:nth-child(4) {
+          width: 420px;
+         }
+         
+         pre {
+            white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+            white-space: -pre-wrap; /* Opera */
+            white-space: -o-pre-wrap; /* Opera */
+            white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+            word-wrap: break-word; /* IE 5.5+ */
+            width: 725px
+         }
+          </style>
+        </head>
+         <h2>apiVersion</h2> <table name="apiVersion" class="table table-striped table-bordered" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>apiVersion</td>
+        <td>apps/v1</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;nisi&#x27; b&#x27;ut&#x27; b&#x27;a&#x27; b&#x27;nostra&#x27; b&#x27;a&#x27; b&#x27;dictum&#x27; b&#x27;mi&#x27; b&#x27;libero&#x27;.</td>
+    </tr>
+</table> Raw yaml: <pre>apiVersion: apps/v1
+</pre> <h2>kind</h2> <table name="kind" class="table table-striped table-bordered" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>kind</td>
+        <td>Deployment</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+</table> Raw yaml: <pre>kind: Deployment
+</pre> <h2>metadata</h2> <table name="metadata" class="table table-striped table-bordered" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>rss-site</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+    <tr>
+        <td>labels</td>
+        <td>--</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;app</td>
+        <td>web</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+</table> Raw yaml: <pre>metadata:
+  name: rss-site
+  labels:
+    app: web
+</pre> <h2>spec</h2> <table name="spec" class="table table-striped table-bordered" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>template</td>
+        <td>--</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;metadata</td>
+        <td>--</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;duis&#x27; b&#x27;id&#x27; b&#x27;a&#x27; b&#x27;a&#x27; b&#x27;est&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;labels</td>
+        <td>--</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;eget&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;app</td>
+        <td>web</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;arcu&#x27; b&#x27;in&#x27; b&#x27;ad&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;spec</td>
+        <td>--</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;cras&#x27; b&#x27;et&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;containers</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td>
+        <td>front-end</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image</td>
+        <td>nginx</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;quam&#x27; b&#x27;ac&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ports</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;containerPort</td>
+        <td>80</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;elit&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td>
+        <td>rss-reader</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;elit&#x27; b&#x27;at&#x27; b&#x27;a&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image</td>
+        <td>nickchase/rss-php-nginx:v1</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;pede&#x27; b&#x27;at&#x27; b&#x27;eu&#x27; b&#x27;ut&#x27; b&#x27;a&#x27; b&#x27;a&#x27; b&#x27;a&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ports</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;pede&#x27; b&#x27;ve&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;containerPort</td>
+        <td>88</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>replicas</td>
+        <td>2</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>selector</td>
+        <td>--</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;matchLabels</td>
+        <td>--</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;app</td>
+        <td>web</td>
+        <td>--</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;quis&#x27; b&#x27;mi&#x27; b&#x27;a&#x27; b&#x27;montes&#x27; b&#x27;placerat&#x27; b&#x27;a&#x27; b&#x27;non&#x27; b&#x27;arcu&#x27; b&#x27;eros&#x27;.</td>
+    </tr>
+</table> Raw yaml: <pre>spec:
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: front-end
+        image: nginx
+        ports:
+        - containerPort: 80
+      - name: rss-reader
+        image: nickchase/rss-php-nginx:v1
+        ports:
+        - containerPort: 88
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+</pre> </html>
