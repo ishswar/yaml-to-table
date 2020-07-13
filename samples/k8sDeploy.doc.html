@@ -1,0 +1,204 @@
+
+        <html>
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          <style>
+        body
+        {
+            padding-left: 20px;
+        }
+        th:nth-child(1) {
+          width: 200px;
+          }
+        
+        /* the second */
+        th:nth-child(2) {
+          width: 200px;
+        }
+        
+        /* the third */
+        th:nth-child(3) {
+          width: 100px;
+         }
+         /* the third */
+         th:nth-child(4) {
+          width: 420px;
+         }
+         
+         pre {
+            white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+            white-space: -pre-wrap; /* Opera */
+            white-space: -o-pre-wrap; /* Opera */
+            white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+            word-wrap: break-word; /* IE 5.5+ */
+            width: 725px
+         }
+          </style>
+        </head>
+         <h2>apiVersion</h2> <table name="apiVersion" id="apiVersion" class="table table-striped table-condensed" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>apiVersion</td>
+        <td>apps/v1</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+</table> Raw yaml: <pre>apiVersion: apps/v1
+</pre> <h2>kind</h2> <table name="kind" id="kind" class="table table-striped table-condensed" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>kind</td>
+        <td>Deployment</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;arcu&#x27; b&#x27;mi&#x27;.</td>
+    </tr>
+</table> Raw yaml: <pre>kind: Deployment
+</pre> <h2>metadata</h2> <table name="metadata" id="metadata" class="table table-striped table-condensed" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>nginx-deployment</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>labels</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;app</td>
+        <td>nginx</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+</table> Raw yaml: <pre>metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+</pre> <h2>spec</h2> <table name="spec" id="spec" class="table table-striped table-condensed" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>replicas</td>
+        <td>3</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;elit&#x27;.</td>
+    </tr>
+    <tr>
+        <td>selector</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;matchLabels</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;app</td>
+        <td>nginx</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;urna&#x27; b&#x27;at&#x27;.</td>
+    </tr>
+    <tr>
+        <td>template</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;metadata</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;labels</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;cras&#x27; b&#x27;mi&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;app</td>
+        <td>nginx</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;spec</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;amet&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;containers</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td>
+        <td>nginx</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image</td>
+        <td>nginx:1.7.9</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ports</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;containerPort</td>
+        <td>80</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+</table> Raw yaml: <pre>spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
+</pre> </html>

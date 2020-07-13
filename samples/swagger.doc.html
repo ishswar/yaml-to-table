@@ -1,0 +1,753 @@
+
+        <html>
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          <style>
+        body
+        {
+            padding-left: 20px;
+        }
+        th:nth-child(1) {
+          width: 200px;
+          }
+        
+        /* the second */
+        th:nth-child(2) {
+          width: 200px;
+        }
+        
+        /* the third */
+        th:nth-child(3) {
+          width: 100px;
+         }
+         /* the third */
+         th:nth-child(4) {
+          width: 420px;
+         }
+         
+         pre {
+            white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+            white-space: -pre-wrap; /* Opera */
+            white-space: -o-pre-wrap; /* Opera */
+            white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+            word-wrap: break-word; /* IE 5.5+ */
+            width: 725px
+         }
+          </style>
+        </head>
+         <h2>swagger</h2> <table name="swagger" id="swagger" class="table table-striped table-condensed" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>swagger</td>
+        <td>2.0</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+</table> Raw yaml: <pre>swagger: '2.0'
+</pre> <h2>info</h2> <table name="info" id="info" class="table table-striped table-condensed" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>os-aggregates</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur.</td>
+    </tr>
+    <tr>
+        <td>version</td>
+        <td>Unknown</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;quam&#x27; b&#x27;ve&#x27; b&#x27;a&#x27;.</td>
+    </tr>
+</table> Raw yaml: <pre>info:
+  title: os-aggregates
+  version: Unknown
+</pre> <h2>consumes</h2> <table name="consumes" id="consumes" class="table table-striped table-condensed" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>application/json</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+</table> Raw yaml: <pre>consumes:
+- application/json
+</pre> <h2>produces</h2> <table name="produces" id="produces" class="table table-striped table-condensed" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>application/json</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+</table> Raw yaml: <pre>produces:
+- application/json
+</pre> <h2>paths</h2> <table name="paths" id="paths" class="table table-striped table-condensed" style="width: 1450px;table-layout: fixed;overflow-wrap: break-word;">
+    <tr>
+        <th>Field</th>
+        <th>Example Value</th>
+        <th>Required</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>/v2/{tenant_id}/os-aggregates</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;eros&#x27; b&#x27;in&#x27; b&#x27;a&#x27; b&#x27;non&#x27; b&#x27;a&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;parameters</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td>
+        <td>tenant_id</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;nisl&#x27; b&#x27;in&#x27; b&#x27;a&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required</td>
+        <td>True</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in</td>
+        <td>path</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;quis&#x27; b&#x27;ut&#x27; b&#x27;mi&#x27; b&#x27;ac&#x27; b&#x27;a&#x27; b&#x27;a&#x27; b&#x27;vel&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td>
+        <td>string</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>The ID for the tenant or account in a multi-tenancy cloud.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;nibh&#x27; b&#x27;et&#x27; b&#x27;a&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;get</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;quam&#x27; b&#x27;ac&#x27; b&#x27;a&#x27; b&#x27;dictumst&#x27; b&#x27;a&#x27; b&#x27;leo&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;operationId</td>
+        <td>list_aggregates</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;summary</td>
+        <td>List aggregates</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>Lists all aggregates.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;produces</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;responses</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;quis&#x27; b&#x27;at&#x27; b&#x27;quisque&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>200 response</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;examples</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;application/json</td>
+        <td>{<br>    &quot;aggregates&quot;: [<br>        {<br>            &quot;name&quot;: &quot;name&quot;,<br>            &quot;availability_zone&quot;: &quot;nova&quot;,<br>            &quot;deleted&quot;: false,<br>            &quot;created_at&quot;: &quot;2012-11-16T06:22:23.361359&quot;,<br>            &quot;updated_at&quot;: null,<br>            &quot;hosts&quot;: [],<br>            &quot;deleted_at&quot;: null,<br>            &quot;id&quot;: 1,<br>            &quot;metadata&quot;: {<br>                &quot;availability_zone&quot;: &quot;nova&quot;<br>            }<br>        }<br>    ]<br>}</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;post</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;operationId</td>
+        <td>create_aggregate</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;summary</td>
+        <td>Create aggregate</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>Creates an aggregate.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;produces</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;responses</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;eros&#x27; b&#x27;ac&#x27; b&#x27;a&#x27; b&#x27;a&#x27; b&#x27;et&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>200 response</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>/v2/{tenant_id}/os-aggregates/{aggregate_id}</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;parameters</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;ante&#x27; b&#x27;ut&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td>
+        <td>tenant_id</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required</td>
+        <td>True</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;eros&#x27; b&#x27;in&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in</td>
+        <td>path</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;amet&#x27; b&#x27;ac&#x27; b&#x27;a&#x27; b&#x27;non&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td>
+        <td>string</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>The ID for the tenant or account in a multi-tenancy cloud.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td>
+        <td>aggregate_id</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required</td>
+        <td>True</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in</td>
+        <td>path</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;arcu&#x27; b&#x27;ut&#x27; b&#x27;a&#x27; b&#x27;a&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td>
+        <td>string</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>The ID associated with an aggregate.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;cras&#x27; b&#x27;in&#x27; b&#x27;a&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;delete</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;operationId</td>
+        <td>delete_aggregate</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;pede&#x27; b&#x27;eu&#x27; b&#x27;ac&#x27; b&#x27;nascetur&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;summary</td>
+        <td>Delete aggregate</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>Deletes an aggregate.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;produces</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;responses</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>200 response</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;pede&#x27; b&#x27;ve&#x27; b&#x27;lacinia&#x27; b&#x27;metus&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;get</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;operationId</td>
+        <td>get_details</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;summary</td>
+        <td>Get aggregate details</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>Gets details about a specified aggregate.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;enim&#x27; b&#x27;ac&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;produces</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;responses</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>200 response</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;pede&#x27; b&#x27;mi&#x27; b&#x27;egestas&#x27; b&#x27;fames&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;put</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;operationId</td>
+        <td>update_aggregate</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;summary</td>
+        <td>Update aggregate</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>Updates the name, and optionally the availability zone, for a specified aggregate.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;produces</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;responses</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>200 response</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;examples</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;application/json</td>
+        <td>{<br>    &quot;aggregate&quot;: {<br>        &quot;name&quot;: &quot;newname&quot;,<br>        &quot;availability_zone&quot;: &quot;nova2&quot;,<br>        &quot;deleted&quot;: false,<br>        &quot;created_at&quot;: &quot;2012-12-04T12:04:27.075065&quot;,<br>        &quot;updated_at&quot;: &quot;2012-12-04T12:04:27.242597&quot;,<br>        &quot;hosts&quot;: [],<br>        &quot;deleted_at&quot;: null,<br>        &quot;id&quot;: 1,<br>        &quot;metadata&quot;: {<br>            &quot;availability_zone&quot;: &quot;nova2&quot;<br>        }<br>    }<br>}</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+    <tr>
+        <td>/v2/{tenant_id}/os-aggregates/{aggregate_id}/action</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;parameters</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td>
+        <td>tenant_id</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;arcu&#x27; b&#x27;at&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required</td>
+        <td>True</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in</td>
+        <td>path</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;diam&#x27; b&#x27;ut&#x27; b&#x27;et&#x27; b&#x27;quam&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td>
+        <td>string</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;pede&#x27; b&#x27;id&#x27; b&#x27;a&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>The ID for the tenant or account in a multi-tenancy cloud.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td>
+        <td>aggregate_id</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;diam&#x27; b&#x27;ut&#x27; b&#x27;quisque&#x27; b&#x27;duis&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required</td>
+        <td>True</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in</td>
+        <td>path</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;eros&#x27; b&#x27;ad&#x27; b&#x27;a&#x27; b&#x27;a&#x27; b&#x27;rhoncus&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td>
+        <td>string</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;pede&#x27; b&#x27;ut&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>The ID associated with an aggregate.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;post</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;operationId</td>
+        <td>remove_host</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;eget&#x27; b&#x27;ad&#x27; b&#x27;a&#x27; b&#x27;neque&#x27; b&#x27;nec&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;summary</td>
+        <td>Remove host from aggregate</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;eros&#x27; b&#x27;in&#x27; b&#x27;a&#x27; b&#x27;mi&#x27; b&#x27;purus&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>Removes a host from an aggregate.<br></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;produces</td>
+        <td></td>
+        <td></td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;responses</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit b&#x27;nisl&#x27; b&#x27;id&#x27; b&#x27;a&#x27;.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description</td>
+        <td>200 response</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;examples</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing elit.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;application/json</td>
+        <td>{<br>    &quot;aggregate&quot;: {<br>        &quot;name&quot;: &quot;name&quot;,<br>        &quot;availability_zone&quot;: &quot;nova&quot;,<br>        &quot;deleted&quot;: false,<br>        &quot;created_at&quot;: &quot;2012-12-04T12:04:26.557909&quot;,<br>        &quot;updated_at&quot;: null,<br>        &quot;hosts&quot;: [],<br>        &quot;deleted_at&quot;: null,<br>        &quot;id&quot;: 1,<br>        &quot;metadata&quot;: {<br>            &quot;availability_zone&quot;: &quot;nova&quot;<br>        }<br>    }<br>}</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>Lorem ipsum dolor sit amet, consecteteur adipiscing.</td>
+    </tr>
+</table> Raw yaml: <pre>paths:
+  /v2/{tenant_id}/os-aggregates:
+    parameters:
+    - name: tenant_id
+      required: true
+      in: path
+      type: string
+      description: 'The ID for the tenant or account in a multi-tenancy cloud.
+
+        '
+    get:
+      operationId: list_aggregates
+      summary: List aggregates
+      description: 'Lists all aggregates.
+
+        '
+      produces:
+      - application/json
+      responses:
+        '200':
+          description: 200 response
+          examples:
+            application/json: "{\n    \"aggregates\": [\n        {\n            \"\
+              name\": \"name\",\n            \"availability_zone\": \"nova\",\n  \
+              \          \"deleted\": false,\n            \"created_at\": \"2012-11-16T06:22:23.361359\"\
+              ,\n            \"updated_at\": null,\n            \"hosts\": [],\n \
+              \           \"deleted_at\": null,\n            \"id\": 1,\n        \
+              \    \"metadata\": {\n                \"availability_zone\": \"nova\"\
+              \n            }\n        }\n    ]\n}"
+    post:
+      operationId: create_aggregate
+      summary: Create aggregate
+      description: 'Creates an aggregate.
+
+        '
+      produces: []
+      responses:
+        '200':
+          description: 200 response
+  /v2/{tenant_id}/os-aggregates/{aggregate_id}:
+    parameters:
+    - name: tenant_id
+      required: true
+      in: path
+      type: string
+      description: 'The ID for the tenant or account in a multi-tenancy cloud.
+
+        '
+    - name: aggregate_id
+      required: true
+      in: path
+      type: string
+      description: 'The ID associated with an aggregate.
+
+        '
+    delete:
+      operationId: delete_aggregate
+      summary: Delete aggregate
+      description: 'Deletes an aggregate.
+
+        '
+      produces: []
+      responses:
+        '200':
+          description: 200 response
+    get:
+      operationId: get_details
+      summary: Get aggregate details
+      description: 'Gets details about a specified aggregate.
+
+        '
+      produces: []
+      responses:
+        '200':
+          description: 200 response
+    put:
+      operationId: update_aggregate
+      summary: Update aggregate
+      description: 'Updates the name, and optionally the availability zone, for a
+        specified aggregate.
+
+        '
+      produces:
+      - application/json
+      responses:
+        '200':
+          description: 200 response
+          examples:
+            application/json: "{\n    \"aggregate\": {\n        \"name\": \"newname\"\
+              ,\n        \"availability_zone\": \"nova2\",\n        \"deleted\": false,\n\
+              \        \"created_at\": \"2012-12-04T12:04:27.075065\",\n        \"\
+              updated_at\": \"2012-12-04T12:04:27.242597\",\n        \"hosts\": [],\n\
+              \        \"deleted_at\": null,\n        \"id\": 1,\n        \"metadata\"\
+              : {\n            \"availability_zone\": \"nova2\"\n        }\n    }\n\
+              }"
+  /v2/{tenant_id}/os-aggregates/{aggregate_id}/action:
+    parameters:
+    - name: tenant_id
+      required: true
+      in: path
+      type: string
+      description: 'The ID for the tenant or account in a multi-tenancy cloud.
+
+        '
+    - name: aggregate_id
+      required: true
+      in: path
+      type: string
+      description: 'The ID associated with an aggregate.
+
+        '
+    post:
+      operationId: remove_host
+      summary: Remove host from aggregate
+      description: 'Removes a host from an aggregate.
+
+        '
+      produces:
+      - application/json
+      responses:
+        '200':
+          description: 200 response
+          examples:
+            application/json: "{\n    \"aggregate\": {\n        \"name\": \"name\"\
+              ,\n        \"availability_zone\": \"nova\",\n        \"deleted\": false,\n\
+              \        \"created_at\": \"2012-12-04T12:04:26.557909\",\n        \"\
+              updated_at\": null,\n        \"hosts\": [],\n        \"deleted_at\"\
+              : null,\n        \"id\": 1,\n        \"metadata\": {\n            \"\
+              availability_zone\": \"nova\"\n        }\n    }\n}"
+</pre> </html>
