@@ -32,9 +32,10 @@ metadata:
 
 """
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description='YAML file to (HTML) table converter',
+                epilog='text table will be printed as STDOUT - html table will be save in html file ')
 parser.add_argument('--inputFile', dest='inputfile', required=True, help="input yaml file to process")
-parser.add_argument('--now', dest='format', choices=['txt', 'html', 'text'], help="convert yaml to text table or html "
+parser.add_argument('--out', dest='format', choices=['txt', 'html', 'text'], help="convert yaml to text table or html "
                                                                                   "table")
 args = parser.parse_args()
 
