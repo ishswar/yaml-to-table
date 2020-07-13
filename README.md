@@ -19,7 +19,8 @@ Convert YAML file to text/html table for documentation
    
    ** Note ** : In this script I actually used 
    [oyaml](https://github.com/wimglenn/oyaml) as it preserves order in python dictionary
-     
+   
+   For field description it will just generated random Lorem ipsum one liner text using python library *loremipsum*   
 
 # Usage 
 
