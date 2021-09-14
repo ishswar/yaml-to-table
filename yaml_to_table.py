@@ -23,12 +23,22 @@ Output Table :
 ~~~~~~~~~~~~
 metadata:
 +--------+------------------+----------+-----------------------------------------------------------+
-| Field  | Example Value    | Required | Description                                               |
+| Field  | Value            | Required | Description                                               |
 +--------+------------------+----------+-----------------------------------------------------------+
 | name   | nginx-deployment |    --    | Lorem ipsum dolor sit amet, consecteteur adipiscing elit. |
 | labels | --               |    --    | Lorem ipsum.                                              |
 |   app  | nginx            |    --    | Lorem ipsum.                                              |
-+--------+------------------+----------+-----------------------------------------------------------+	    
++--------+------------------+----------+-----------------------------------------------------------+
+
+New table format:
+
++--------+------------------+
+| Field  | Value            |
++--------+------------------+
+| name   | nginx-deployment |
+| labels | --               |
+|   app  | nginx            |
++--------+------------------+
 
 """
 
@@ -116,7 +126,8 @@ def printDic(inDictionary, inPTable, indent):
     # Go ver dictionary
     for item in inDictionary:
         if isinstance(item, dict):  # If it again dictionary call same function with this new dictionary
-            inPTable.add_row([SPACE_CHAR, SPACE_CHAR, SPACE_CHAR, SPACE_CHAR])
+            # inPTable.add_row([SPACE_CHAR, SPACE_CHAR, SPACE_CHAR, SPACE_CHAR])
+            inPTable.add_row([SPACE_CHAR, SPACE_CHAR])
             printDic(item, inPTable, indent)
         else:
             # Two way to get next item based on input type
@@ -125,20 +136,24 @@ def printDic(inDictionary, inPTable, indent):
             elif isinstance(inDictionary, list):
                 # If it simple array/list we just print all it's value and we are done
                 for _item in inDictionary:
-                    inPTable.add_row([indent + _item, SPACE_CHAR+SPACE_CHAR, SPACE_CHAR+SPACE_CHAR, listToString(get_sentences(1, True))])
+                    # inPTable.add_row([indent + _item, SPACE_CHAR+SPACE_CHAR, SPACE_CHAR+SPACE_CHAR, listToString(get_sentences(1, True))])
+                    inPTable.add_row([indent + _item, SPACE_CHAR+SPACE_CHAR])
                 break
 
             # if it is dictionary or list process them accordingly
             if isinstance(moreStuff, dict):
-                inPTable.add_row([indent + item, SPACE_CHAR+SPACE_CHAR, SPACE_CHAR+SPACE_CHAR, listToString(get_sentences(1, True))])
+                # inPTable.add_row([indent + item, SPACE_CHAR+SPACE_CHAR, SPACE_CHAR+SPACE_CHAR, listToString(get_sentences(1, True))])
+                inPTable.add_row([indent + item, SPACE_CHAR+SPACE_CHAR])
                 printDic(moreStuff, inPTable, SPACE_CHAR + SPACE_CHAR + indent)
             elif isinstance(moreStuff, list):
 
                 # If we are not in nested call (as indent is empty string) we add one extra row in table (for clarity)
-                if indent is "":
-                    inPTable.add_row([SPACE_CHAR, SPACE_CHAR, SPACE_CHAR, SPACE_CHAR])
+                if indent == "":
+                    # inPTable.add_row([SPACE_CHAR, SPACE_CHAR, SPACE_CHAR, SPACE_CHAR])
+                    inPTable.add_row([SPACE_CHAR, SPACE_CHAR])
                 #
-                inPTable.add_row([indent + item, "", "", listToString(get_sentences(1, True))])
+                # inPTable.add_row([indent + item, "", "", listToString(get_sentences(1, True))])
+                inPTable.add_row([indent + item, ""])
                 for dicInDic in moreStuff:
                     if dicInDic is not None:
                         if isinstance(dicInDic, dict):
@@ -146,7 +161,8 @@ def printDic(inDictionary, inPTable, indent):
             else:
                 # Most of the call will end-up eventually here -
                 # this will print - key,value,isItRequired, Lorem ipsum (description)
-                inPTable.add_row([indent + item, inDictionary[item], SPACE_CHAR+SPACE_CHAR, listToString(get_sentences(1, True))])
+                # inPTable.add_row([indent + item, inDictionary[item], SPACE_CHAR+SPACE_CHAR, listToString(get_sentences(1, True))])
+                inPTable.add_row([indent + item, inDictionary[item]])
 
 
 """
@@ -168,13 +184,14 @@ with open(INPUT_YAML) as file:
         body_st = []
         prettyTable = PrettyTable()
 
-        prettyTable.field_names = ["Field", "Example Value", "Required", "Description"]
+        # prettyTable.field_names = ["Field", "Value", "Required", "Description"]
+        prettyTable.field_names = ["Field", "Value"]
 
         if not PRINT_HTML:
             prettyTable.align["Field"] = "l"
-            prettyTable.align["Example Value"] = "l"
-            prettyTable.align["Required"] = "c"
-            prettyTable.align["Description"] = "l"
+            prettyTable.align["Value"] = "l"
+            # prettyTable.align["Required"] = "c"
+            # prettyTable.align["Description"] = "l"
 
         if isinstance(yaml_file_object, list):
             dic = yaml_file_object[i]
@@ -190,7 +207,8 @@ with open(INPUT_YAML) as file:
                 yaml_snippet = yaml.dump(dic)
 
         else:
-            prettyTable.add_row([key, dic, SPACE_CHAR+SPACE_CHAR, get_sentences(1, True)[0]])
+            # prettyTable.add_row([key, dic, SPACE_CHAR+SPACE_CHAR, get_sentences(1, True)[0]])
+            prettyTable.add_row([key, dic])
             yaml_snippet = yaml.dump({key: dic})
 
         if isinstance(yaml_file_object, dict):
